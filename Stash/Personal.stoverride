@@ -1,5 +1,5 @@
-name: 飞书直连
-desc: 将飞书域名白名单中的域名设为直连，规则集每 24 小时更新。
+name: 个人覆写
+desc: 个人 Stash 配置覆写，集中维护分流规则及其他自定义设置。
 
 rule-providers:
   imtsuki-feishu:
