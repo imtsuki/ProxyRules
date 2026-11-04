@@ -1,6 +1,16 @@
 name: 个人覆写
 desc: 个人 Stash 配置覆写，集中维护分流规则及其他自定义设置。
 
+proxies:
+  - name: tailscale
+    type: tailscale
+
+proxy-groups:
+  - name: Tailscale
+    type: select
+    proxies:
+      - tailscale
+
 rule-providers:
   feishu-direct:
     behavior: domain
