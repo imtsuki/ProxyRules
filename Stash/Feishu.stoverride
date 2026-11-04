@@ -1,0 +1,12 @@
+name: 飞书直连
+desc: 将飞书域名白名单中的域名设为直连，规则集每 24 小时更新。
+
+rule-providers:
+  imtsuki-feishu:
+    behavior: domain
+    format: yaml
+    url: https://raw.githubusercontent.com/imtsuki/ProxyRules/main/Stash/Feishu.yaml
+    interval: 86400
+
+rules:
+  - RULE-SET,imtsuki-feishu,DIRECT
