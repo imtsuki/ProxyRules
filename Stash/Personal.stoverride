@@ -2,11 +2,11 @@ name: 个人覆写
 desc: 个人 Stash 配置覆写，集中维护分流规则及其他自定义设置。
 
 rule-providers:
-  imtsuki-feishu:
+  feishu-direct:
     behavior: domain
     format: yaml
     url: https://raw.githubusercontent.com/imtsuki/ProxyRules/main/Stash/Feishu.yaml
     interval: 86400
 
 rules:
-  - RULE-SET,imtsuki-feishu,DIRECT
+  - RULE-SET,feishu-direct,DIRECT
